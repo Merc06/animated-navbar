@@ -1,0 +1,71 @@
+@mixin easeOut {
+    transition: all .3s ease-out;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+li {
+    list-style: none;
+}
+
+
+.container {
+    padding: 0 3rem;
+}
+
+nav {
+    background: rgba(53, 84, 129, .50);
+    padding: 1.5rem 0;
+    position: fixed;
+    width: 100%;
+    @include easeOut;
+
+    &.scrolled {
+        background: rgba(53, 84, 129, 1);
+        padding: 1rem 0;
+        @include easeOut;
+    }
+}
+
+.nav-items {
+    display: grid;
+    grid-template-columns: auto 1fr;
+
+    
+    .brand {
+        font-size: 2rem;
+        
+        a {
+            @include easeOut;
+        }
+        
+        span {
+            font-size: 1.5rem;
+        }
+    }
+
+    .nav-right {
+        justify-self: right;
+        align-self: center;
+
+        li {
+            display: inline;
+            margin-left: 10px;
+        }
+    }
+
+}
+
+.content {
+    height: 40rem;
+}
+

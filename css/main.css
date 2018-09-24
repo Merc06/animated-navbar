@@ -1,0 +1,72 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+li {
+  list-style: none;
+}
+
+.container {
+  padding: 0 3rem;
+}
+
+nav {
+  background: rgba(53, 84, 129, 0.5);
+  padding: 1.5rem 0;
+  position: fixed;
+  width: 100%;
+  -webkit-transition: all .3s ease-out;
+  transition: all .3s ease-out;
+}
+
+nav.scrolled {
+  background: #355481;
+  padding: 1rem 0;
+  -webkit-transition: all .3s ease-out;
+  transition: all .3s ease-out;
+}
+
+.nav-items {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto 1fr;
+      grid-template-columns: auto 1fr;
+}
+
+.nav-items .brand {
+  font-size: 2rem;
+}
+
+.nav-items .brand a {
+  -webkit-transition: all .3s ease-out;
+  transition: all .3s ease-out;
+}
+
+.nav-items .brand span {
+  font-size: 1.5rem;
+}
+
+.nav-items .nav-right {
+  -ms-grid-column-align: right;
+      justify-self: right;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.nav-items .nav-right li {
+  display: inline;
+  margin-left: 10px;
+}
+
+.content {
+  height: 40rem;
+}
+/*# sourceMappingURL=main.css.map */
